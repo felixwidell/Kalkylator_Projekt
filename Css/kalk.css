@@ -1,0 +1,78 @@
+
+/* Styling för sidan */
+body{
+    background-color: blanchedalmond;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* Styling för själva kalkylator boxen ".container" osynlig div för placering av kalkylatorn, 
+".calc" själva kalkylator boxen som är svart.   */
+.container{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calc{
+    box-shadow: -6px -6px 13px #fff,
+                6px 6px 13px rgb(114, 85, 85);
+    border-radius: 28px;
+    padding: 16px;
+    display: grid;
+    margin-top: 700px;
+    grid-template-columns: repeat(4,100px);
+    background-color: rgba(58, 43, 43, 0.945);
+}
+/* #inputext input rutan stylad med box-shadow och border-radius så den ser nice ut 
+även text-align: end; så att nummrerna ligger åt höger */
+#inputext{
+    grid-column: span 4;
+    height: 68px;
+    width: 100%;
+    box-shadow: inset -6px -6px 13px #fff,
+                inset 6px 6px 13px rgba(116, 108, 108, 0.555);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 32px;
+    color: black;
+    text-align: end;
+    margin: 40px 0px 30px 0px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+/* button gäller alla knappar för att få dom bli runda o snygga. */
+button{
+    box-shadow: inset -2px -2px 6px #fff,
+                inset 2px 2px 6px rgba(116, 108, 108, 0.555);
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    font-size: 20px;
+
+    
+}
+
+/* .equal lika med knappen fick egen klass för att få den att ta upp mer plats längst ned */
+.equal{
+    width: 280px;
+    border-radius: 29px;
+}
+
+.i9{
+    margin-left: 290px;
+    margin-top: -100px;
+}
